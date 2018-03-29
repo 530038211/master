@@ -16,6 +16,7 @@ public class SynchronizedTest {
 				synchronized(A){
 					try {
 						Thread.currentThread().sleep(2000);
+						System.out.println("111");
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
