@@ -17,6 +17,7 @@ public class SynchronizedTest {
 					try {
 						Thread.currentThread().sleep(2000);
 						System.out.println("111");
+						System.out.println("333");
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -31,6 +32,7 @@ public class SynchronizedTest {
 			public void run() {
 				synchronized(A){
 					System.out.println(B+"22222");
+					System.out.println("444");
 				}
 			}
 			
